@@ -1,23 +1,10 @@
 all: up
 
-# Vagrant utils
-v-init:
-	vagrant init generic/ubuntu2204
-
-v-up:
-	vagrant up
-
-v-ssh:
-	vagrant ssh
-
-v-halt:
-	vagrant halt
-
-v-destroy:
-	vagrant destroy -f
+BASE_DIR := srcs
+COMPOSE := docker compose
 
 up:
-	docker compose up -d
+	cd $(BASE_DIR) && $(COMPOSE) build && $(COMPOSE) up -d
 
 down:
-	docker compose down
+	cd $(BASE_DIR) && $(COMPOSE) down

@@ -7,5 +7,8 @@ ssh:
 halt:
 	vagrant halt
 
+reload:
+	vagrant reload
+
 destroy:
 	vagrant destroy -f

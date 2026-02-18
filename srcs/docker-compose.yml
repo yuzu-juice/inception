@@ -1,0 +1,12 @@
+services:
+  nginx:
+    build:
+      context: ./requirements/nginx
+      dockerfile: ./Dockerfile
+    ports:
+      - "8080:80"
+		networks:
+			- inception-network
+
+networks:
+	inception-network:
