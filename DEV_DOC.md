@@ -36,4 +36,15 @@ There are some useful make commands in Makefile.
 make up
 ```
 
-## Ref
+### Connect to containers
+
+```zsh
+docker exec -it [ps id] ash
+docker run -it [image id] ash
+```
+
+## Connect to mariadb
+
+```zsh
+mysql --host=localhost --user=dbuser --port=3306 --password defaultdb
+```

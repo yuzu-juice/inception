@@ -49,6 +49,28 @@ Followings are referenced resources on the internet.
 
 [Docker Composeで既存のDockerネットワークにアプリケーションを追加する](https://devops-blog.virtualtech.jp/entry/20250127/1737936341)
 
+[Dockerで「docker run bash」を使用する方法とベストプラクティスガイド](https://bashdo.com/workflow/docker%E3%81%A7%E3%80%8Cdocker-run-bash%E3%80%8D%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95%E3%81%A8%E3%83%99%E3%82%B9%E3%83%88%E3%83%97%E3%83%A9%E3%82%AF%E3%83%86%E3%82%A3/)
+
+[【保存版】Dockerコンテナ操作の基本コマンド逆引きチートシート](https://zenn.dev/meantix/articles/c7eea17dc75d4f)
+
 ### Nginx
 
 [Nginx設定ファイル完全ガイド｜nginx.confの書き方から実践例まで徹底解説](https://www.choge-blog.com/web/nginxsettingsfile/)
+
+[Which nginx-config file is enabled, /etc/nginx/conf.d/default.conf or /etc/nginx/nginx.conf?](https://stackoverflow.com/questions/22143565/which-nginx-config-file-is-enabled-etc-nginx-conf-d-default-conf-or-etc-nginx)
+
+[最小限の設定で nginx の設定を動作確認する環境](https://blog.n-t.jp/post/tech/minimum-nginx-try-and-error-env/)
+
+[Docker + Nginx で自己署名証明書を使った HTTPS 化してみた](https://qiita.com/ymtdir/items/4d134c93e25327d01957)
+
+[A Guide on How to Install SSL Certificate on Nginx](https://www.vodien.com/learn/a-guide-on-how-to-install-ssl-certificate-on-nginx/)
+
+### MariaDB
+
+[Installing MariaDB on Alpine Linux: A Comprehensive Guide](https://itsfoss.gitlab.io/post/how-to-install-mariadb-on-alpine-linux/)
+
+[Docker で MariaDB を 利用する](https://qiita.com/naozo-se/items/e988196186a2236de2b7)
+
+[4.2.4 コマンドオプションを使用した MySQL Server への接続](https://dev.mysql.com/doc/refman/8.0/ja/connecting.html)
+
+[How to Install the Correct "mysql-client" Package in Debian 12](https://allthings.how/how-to-install-the-correct-mysql-client-package-in-debian-12/)

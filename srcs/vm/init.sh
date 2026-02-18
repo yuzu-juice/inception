@@ -20,3 +20,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 sudo apt-get install make -y
 
 sudo usermod -aG docker vagrant
+
+sudo apt-get install default-mysql-client -y
+
+sudo -- sh -c "echo '127.0.0.1 takitaga.42.fr' >> /etc/hosts"

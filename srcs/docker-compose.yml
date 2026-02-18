@@ -4,9 +4,30 @@ services:
       context: ./requirements/nginx
       dockerfile: ./Dockerfile
     ports:
-      - "8080:80"
-		networks:
-			- inception-network
+      - "443:443"
+    networks:
+      - inception-network
+
+  mariadb:
+    build:
+      context: ./requirements/mariadb
+      dockerfile: ./Dockerfile
+    ports:
+      - "3306:3306"
+    environment:
+      MARIADB_DATABASE: defaultdb
+      MARIADB_USER: dbuser
+      MARIADB_PASSWORD: dbpass
+      MARIADB_ROOT_PASSWORD: rootpass
+      TZ: Asia/Tokyo
+    volumes:
+      - ./conf.d:/etc/mysql/conf.d
+      - mariadb-volume:/home/takitaga/data
+
+volumes:
+  mariadb-volume:
+    name: mariadb-data
+    driver: local
 
 networks:
-	inception-network:
+  inception-network:

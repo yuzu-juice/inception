@@ -10,5 +10,8 @@ halt:
 reload:
 	vagrant reload
 
+provision:
+	vagrant provision
+
 destroy:
 	vagrant destroy -f
