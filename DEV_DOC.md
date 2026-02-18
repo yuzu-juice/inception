@@ -46,5 +46,5 @@ docker run -it [image id] ash
 ## Connect to mariadb
 
 ```zsh
-mysql --host=localhost --user=dbuser --port=3306 --password defaultdb
+mariadb --host=localhost --user=dbuser --port=3306 --password defaultdb
 ```

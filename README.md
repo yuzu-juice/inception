@@ -53,6 +53,8 @@ Followings are referenced resources on the internet.
 
 [【保存版】Dockerコンテナ操作の基本コマンド逆引きチートシート](https://zenn.dev/meantix/articles/c7eea17dc75d4f)
 
+[Setting up a new user](https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user)
+
 ### Nginx
 
 [Nginx設定ファイル完全ガイド｜nginx.confの書き方から実践例まで徹底解説](https://www.choge-blog.com/web/nginxsettingsfile/)

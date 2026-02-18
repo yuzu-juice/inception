@@ -5,7 +5,9 @@ COPY ./conf/nginx.conf /etc/nginx/nginx.conf
 
 RUN apk update && apk add nginx openssl
 
+
 RUN mkdir /etc/nginx/ssl
+
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     	    -out /etc/nginx/ssl/takitaga.crt \
 	    -keyout /etc/nginx/ssl/takitaga.key \
