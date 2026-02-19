@@ -8,7 +8,18 @@ A “Description” section that clearly presents the project, including its goa
 
 ### Virtual Machines vs Docker
 
+The most big differece between virtual machine and container like docker is its virtualization layer.
+
+- Virtual machine: hardware layer virtualization 
+- Docker container: application layer virtualization  
+
 ### Secrets vs Environment Variables
+
+Both are used in a situation that managing user dependent values. Simply, these difference is sensitive information or not.
+
+**Examples**
+- Secrets: password, API key, ssh key, etc.
+- Environment Variable: url, username, port number, etc.
 
 ### Docker Network vs Host Network
 
@@ -16,13 +27,11 @@ A “Description” section that clearly presents the project, including its goa
 
 ## Instructions
 
-An “Instructions” section containing any relevant information about compilation, installation, and/or execution.
+You can see the instruction in [USER_DOC.md](USER_DOC.md)
 
 ## Resources
 
-A “Resources” section listing classic references related to the topic (documentation, articles, tutorials, etc.), as well as a description of how AI was used — specifying for which tasks and which parts of the project.
-
-I've used LLM or something AI for debbuging only in this project.
+I've used LLM or something AI only for debbuging in this project.
 All documents are written by myself without any translation tools.
 
 Followings are referenced resources on the internet.
