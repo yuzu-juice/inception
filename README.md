@@ -76,3 +76,5 @@ Followings are referenced resources on the internet.
 [4.2.4 コマンドオプションを使用した MySQL Server への接続](https://dev.mysql.com/doc/refman/8.0/ja/connecting.html)
 
 [How to Install the Correct "mysql-client" Package in Debian 12](https://allthings.how/how-to-install-the-correct-mysql-client-package-in-debian-12/)
+
+[mariadb-install-db](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-install-db)

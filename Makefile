@@ -8,3 +8,10 @@ up:
 
 down:
 	cd $(BASE_DIR) && $(COMPOSE) down
+
+down-v:
+	cd $(BASE_DIR) && $(COMPOSE) down -v
+
+re:
+	make down-v
+	make up

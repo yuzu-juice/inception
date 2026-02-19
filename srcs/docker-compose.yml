@@ -2,7 +2,7 @@ services:
   nginx:
     build:
       context: ./requirements/nginx
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "443:443"
     networks:
@@ -11,7 +11,7 @@ services:
   mariadb:
     build:
       context: ./requirements/mariadb
-      dockerfile: ./Dockerfile
+      dockerfile: Dockerfile
     ports:
       - "3306:3306"
     environment:
@@ -22,7 +22,7 @@ services:
       TZ: Asia/Tokyo
     volumes:
       - ./conf.d:/etc/mysql/conf.d
-      - mariadb-volume:/home/takitaga/data
+      - mariadb-volume:/var/lib/mysql
 
 volumes:
   mariadb-volume:

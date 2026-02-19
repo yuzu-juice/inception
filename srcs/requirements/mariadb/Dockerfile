@@ -3,10 +3,11 @@ FROM alpine:3.22
 
 RUN apk update && apk add mariadb mariadb-client
 
-RUN addgroup mysqlgroup && adduser mysql mysqlgroup
+RUN mkdir -p /run/mysqld /var/lib/mysql && \
+    chown -R mysql:mysql /run/mysqld /var/lib/mysql
 
-USER mysql
+RUN mariadb-install-db --user=mysql --datadir=/var/lib/mysql --basedir=/usr
 
 EXPOSE 3306
 
-CMD ["mariadbd"]
+CMD ["mariadbd", "--user=mysql"]
