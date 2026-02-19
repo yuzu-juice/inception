@@ -102,3 +102,5 @@ Followings are referenced resources on the internet.
 [Server Environment](https://make.wordpress.org/hosting/handbook/server-environment/)
 
 [PHP-FPM: Configuration the Listen Directive](https://serversforhackers.com/c/php-fpm-configuration-the-listen-directive)
+
+[wp user create](https://developer.wordpress.org/cli/commands/user/create/)
