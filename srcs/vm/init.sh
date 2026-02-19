@@ -1,6 +1,6 @@
 sudo apt-get update
 
-# sudo apt-get install -y ubuntu-desktop
+sudo apt-get install -y xubuntu-desktop
 
 # Add Docker's official GPG key:
 sudo apt-get install ca-certificates curl -y
