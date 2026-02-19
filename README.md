@@ -4,9 +4,23 @@
 
 ## Description
 
+A “Description” section that clearly presents the project, including its goal and a brief overview.
+
+### Virtual Machines vs Docker
+
+### Secrets vs Environment Variables
+
+### Docker Network vs Host Network
+
+### Docker Volumes vs Bind Mounts
+
 ## Instructions
 
+An “Instructions” section containing any relevant information about compilation, installation, and/or execution.
+
 ## Resources
+
+A “Resources” section listing classic references related to the topic (documentation, articles, tutorials, etc.), as well as a description of how AI was used — specifying for which tasks and which parts of the project.
 
 I've used LLM or something AI for debbuging only in this project.
 All documents are written by myself without any translation tools.
