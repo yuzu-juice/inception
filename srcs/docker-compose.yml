@@ -5,6 +5,8 @@ services:
       dockerfile: Dockerfile
     ports:
       - "443:443"
+    volumes:
+      - wordpress-volume:/var/www/html
     networks:
       - inception-network
 
@@ -12,8 +14,6 @@ services:
     build:
       context: ./requirements/mariadb
       dockerfile: Dockerfile
-    ports:
-      - "3306:3306"
     environment:
       MARIADB_DATABASE: defaultdb
       MARIADB_USER: dbuser
@@ -21,13 +21,42 @@ services:
       MARIADB_ROOT_PASSWORD: rootpass
       TZ: Asia/Tokyo
     volumes:
-      - ./conf.d:/etc/mysql/conf.d
       - mariadb-volume:/var/lib/mysql
+    networks:
+      - inception-network
+
+  wordpress:
+    build:
+      context: ./requirements/wordpress
+      dockerfile: Dockerfile
+    environment:
+      MARIADB_DATABASE: defaultdb
+      MARIADB_USER: dbuser
+      MARIADB_PASSWORD: dbpass
+    volumes:
+      - wordpress-volume:/var/www/html
+    depends_on:
+      - mariadb
+      - nginx
+    networks:
+      - inception-network
 
 volumes:
   mariadb-volume:
     name: mariadb-data
     driver: local
+    driver_opts:
+      type: none
+      device: /home/takitaga/data/mariadb
+      o: bind
+  wordpress-volume:
+    name: wordpress-data
+    driver: local
+    driver_opts:
+      type: none
+      device: /home/takitaga/data/wordpress
+      o: bind
 
 networks:
   inception-network:
+    driver: bridge

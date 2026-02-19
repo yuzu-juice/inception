@@ -55,6 +55,12 @@ Followings are referenced resources on the internet.
 
 [Setting up a new user](https://wiki.alpinelinux.org/wiki/Setting_up_a_new_user)
 
+[Define services in Docker Compose](https://docs.docker.com/reference/compose-file/services/)
+
+[Network in Compose](https://docs.docker.com/compose/how-tos/networking/)
+
+[https://docs.docker.com/reference/compose-file/volumes/](https://docs.docker.com/reference/compose-file/volumes/)
+
 ### Nginx
 
 [Nginx設定ファイル完全ガイド｜nginx.confの書き方から実践例まで徹底解説](https://www.choge-blog.com/web/nginxsettingsfile/)
@@ -67,6 +73,8 @@ Followings are referenced resources on the internet.
 
 [A Guide on How to Install SSL Certificate on Nginx](https://www.vodien.com/learn/a-guide-on-how-to-install-ssl-certificate-on-nginx/)
 
+[Nginxで拡張子指定で静的ファイルをキャッシュするときの注意](https://zuntan02.hateblo.jp/entry/2018/07/26/141707)
+
 ### MariaDB
 
 [Installing MariaDB on Alpine Linux: A Comprehensive Guide](https://itsfoss.gitlab.io/post/how-to-install-mariadb-on-alpine-linux/)
@@ -78,3 +86,17 @@ Followings are referenced resources on the internet.
 [How to Install the Correct "mysql-client" Package in Debian 12](https://allthings.how/how-to-install-the-correct-mysql-client-package-in-debian-12/)
 
 [mariadb-install-db](https://mariadb.com/docs/server/clients-and-utilities/deployment-tools/mariadb-install-db)
+
+### WordPress
+
+[WP-CLI](https://wp-cli.org/ja/)
+
+[PHP: Class 'Phar' not found](https://stackoverflow.com/questions/8851099/php-class-phar-not-found)
+
+[How to install WordPress](https://make.wordpress.org/cli/handbook/how-to/how-to-install/)
+
+[php-fpm(8) - Linux man page](https://linux.die.net/man/8/php-fpm)
+
+[Server Environment](https://make.wordpress.org/hosting/handbook/server-environment/)
+
+[PHP-FPM: Configuration the Listen Directive](https://serversforhackers.com/c/php-fpm-configuration-the-listen-directive)

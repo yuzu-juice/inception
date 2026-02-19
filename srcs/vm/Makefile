@@ -15,3 +15,6 @@ provision:
 
 destroy:
 	vagrant destroy -f
+
+re:
+	make destroy && make up

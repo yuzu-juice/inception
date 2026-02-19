@@ -24,3 +24,5 @@ sudo usermod -aG docker vagrant
 sudo apt-get install default-mysql-client -y
 
 sudo -- sh -c "echo '127.0.0.1 takitaga.42.fr' >> /etc/hosts"
+
+sudo mkdir -p /home/takitaga/data/mariadb /home/takitaga/data/wordpress
