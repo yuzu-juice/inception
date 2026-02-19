@@ -4,7 +4,8 @@
 
 ## Description
 
-A “Description” section that clearly presents the project, including its goal and a brief overview.
+The goal of Inception project is learning how create docker containers and manage them.
+Additionally, we can learn how to use some famous software like nginx, mariadb and wordpress.
 
 ### Virtual Machines vs Docker
 
