@@ -12,7 +12,7 @@ Additionally, we can learn how to use some famous software like nginx, mariadb a
 The most big differece between virtual machine and container like docker is its virtualization layer.
 
 - Virtual machine: hardware layer virtualization 
-- Docker container: application layer virtualization  
+- Docker container: application layer virtualization
 
 ### Secrets vs Environment Variables
 
@@ -24,7 +24,15 @@ Both are used in a situation that managing user dependent values. Simply, these 
 
 ### Docker Network vs Host Network
 
+Host network means the network on the host network. If you use host mode in docker compose file, you can use host network namespace.
+Docker network can used between only docker containers configured in docker compose file.
+
 ### Docker Volumes vs Bind Mounts
+
+Both are data persistence method.
+
+- volume: It doesn'n share data with host machine. 
+- bind: Use file system on the host machine to save data. Data is synced between bind mounted folder in container and host file system.
 
 ## Instructions
 
@@ -43,6 +51,8 @@ Followings are referenced resources on the internet.
 
 [Vagrant boxes](https://developer.hashicorp.com/vagrant/docs/boxes)
 
+[Discover Vagrant Boxes](https://portal.cloud.hashicorp.com/vagrant/discover)
+
 [bento/ubuntu-22.04](https://portal.cloud.hashicorp.com/vagrant/discover/bento/ubuntu-22.04)
 
 [VirtualBoxとVagrantでDocker環境構築](https://qiita.com/shiro01/items/c5a956de9e638acb3beb)
@@ -55,7 +65,10 @@ Followings are referenced resources on the internet.
 
 [VagrantでUbuntu(GUI)の開発環境作ってみた](https://qiita.com/MasanoriIwakura/items/5348331647b9d7893097)
 
+
 ### Docker
+
+[Persisting container data](https://docs.docker.com/get-started/docker-concepts/running-containers/persisting-container-data/)
 
 [DockerでNginxのコンテナを作成](https://www.naka-sys.okinawa/docker-nginx-container/)
 
@@ -86,6 +99,8 @@ Followings are referenced resources on the internet.
 [Network in Compose](https://docs.docker.com/compose/how-tos/networking/)
 
 [https://docs.docker.com/reference/compose-file/volumes/](https://docs.docker.com/reference/compose-file/volumes/)
+
+[Dockerのボリュームマウントとバインドマウント](https://qiita.com/_lvyuu/items/f0a0a1266ec3fcbc279d)
 
 ### Nginx
 

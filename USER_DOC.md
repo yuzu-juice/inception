@@ -15,3 +15,14 @@
 ## Stop the project
 
 1. Move to srcs/vm directory and run `make destroy` command.
+
+## Structure
+
+- nginx: provide web server
+- wordpress: provider static files and php cgi scripts
+- mariadb: provide database used by wordpress
+
+## Wordpress website
+
+website: https://takitaga.42.fr
+admin panel: https://takitaga.42.fr/wp-admin

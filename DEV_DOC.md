@@ -36,15 +36,25 @@ There are some useful make commands in Makefile.
 make up
 ```
 
-### Connect to containers
+## Useful docker relevant commands
 
 ```zsh
-docker exec -it [ps id] ash
-docker run -it [image id] ash
+docker ps # list running containers
+docker ps -a # list containers include exited
+docker images # list built images
+docker exec -it [ps id] ash # run ash in running container
+docker run --rm -it [image id] ash # run ash from built image
+docker logs [ps id] # see logs
 ```
 
 ## Connect to mariadb
 
 ```zsh
-mariadb --host=localhost --user=dbuser --port=3306 --password defaultdb
+mariadb --host=<hostname> --user=<username> --port=<port> --password <database name>
 ```
+
+## Data persistance
+
+In the project, data are stored in mariadb.
+Mariadb related files are stored using volumes.
+It means all data are stored in host machine.
