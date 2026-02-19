@@ -4,7 +4,7 @@
 
 ## How to start the project
 
-1. Copy src/.env.example file to src/.env file and replace some credentials to you want to use.
+1. Copy src/.env.example file to src/.env file and replace some values to you want to use.
 
 2. Move to srcs/vm directory and run `make up && make ssh` command.
 
