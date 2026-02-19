@@ -14,9 +14,9 @@ if ! wp core is-installed 2>/dev/null; then
     wp core install \
        --url=takitaga.42.fr \
        --title="Inception" \
-       --admin_user=wpcli \
-       --admin_password=wpcli \
-       --admin_email=takitaga@student.42tokyo.jp
+       --admin_user=$WP_ADMIN_USER \
+       --admin_password=$WP_ADMIN_PASSWORD \
+       --admin_email=$WP_ADMIN_EMAIL
 fi
 
 exec php-fpm83 -F
