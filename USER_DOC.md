@@ -10,7 +10,7 @@
 
 3. Move to /vagrant directory and run `make up` command.
 
-4. Access to `https://takitaga.42.fr` in a browser in VM instance.
+4. Access to `https://takitaga.42.fr` via any browser in VM instance.
 
 ## Stop the project
 
