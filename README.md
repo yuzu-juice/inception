@@ -8,8 +8,8 @@
 
 ## Resources
 
-I've never use LLM or something AI in this project. Just google searching.
-Also, I've written whole document without any translation tools.
+I've used LLM or something AI for debbuging only in this project.
+All documents are written by myself without any translation tools.
 
 Followings are referenced resources on the internet.
 
@@ -28,6 +28,8 @@ Followings are referenced resources on the internet.
 [WindowsでVagrant上にDocker環境を作るときのメモ](https://tsyama.hatenablog.com/entry/docker-vagrant)
 
 [vagrantの共有フォルダ synced_folder について](https://qiita.com/kaihei777/items/82dd6626ee7f2aecbe66)
+
+[VagrantでUbuntu(GUI)の開発環境作ってみた](https://qiita.com/MasanoriIwakura/items/5348331647b9d7893097)
 
 ### Docker
 

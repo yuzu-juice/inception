@@ -9,6 +9,7 @@ services:
       - wordpress-volume:/var/www/html
     networks:
       - inception-network
+    restart: always
 
   mariadb:
     build:
@@ -20,6 +21,7 @@ services:
       - mariadb-volume:/var/lib/mysql
     networks:
       - inception-network
+    restart: always
 
   wordpress:
     build:
@@ -33,6 +35,7 @@ services:
       - mariadb
     networks:
       - inception-network
+    restart: always
 
 volumes:
   mariadb-volume:
