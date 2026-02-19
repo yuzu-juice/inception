@@ -14,12 +14,8 @@ services:
     build:
       context: ./requirements/mariadb
       dockerfile: Dockerfile
-    environment:
-      MARIADB_DATABASE: defaultdb
-      MARIADB_USER: dbuser
-      MARIADB_PASSWORD: dbpass
-      MARIADB_ROOT_PASSWORD: rootpass
-      TZ: Asia/Tokyo
+    env_file:
+      - .env
     volumes:
       - mariadb-volume:/var/lib/mysql
     networks:
@@ -29,15 +25,12 @@ services:
     build:
       context: ./requirements/wordpress
       dockerfile: Dockerfile
-    environment:
-      MARIADB_DATABASE: defaultdb
-      MARIADB_USER: dbuser
-      MARIADB_PASSWORD: dbpass
+    env_file:
+      - .env
     volumes:
       - wordpress-volume:/var/www/html
     depends_on:
       - mariadb
-      - nginx
     networks:
       - inception-network
 
